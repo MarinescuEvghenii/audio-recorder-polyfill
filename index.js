@@ -34,7 +34,7 @@ function MediaRecorder (stream) {
    * The `MediaStream` passed into the constructor.
    * @type {MediaStream}
    */
-  this.stream = stream
+  this.stream = stream.clone();
 
   /**
    * The current state of recording process.
